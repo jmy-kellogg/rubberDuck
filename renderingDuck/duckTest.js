@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>explore duck</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <style>
-    body {
-        color: #fff;
-        font-family: Monospace;
-        font-size: 13px;
-        text-align: center;
-        font-weight: bold;
-        background-color: #000;
-        margin: 0px;
-        overflow: hidden;
-    }
-    
-    #info {
-        position: absolute;
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-        color: #fff;
-    }
-    
-    a {
-        color: blue;
-    }
-    </style>
-</head>
-
-<body>
-    <script src="tools/three.js/build/three.js"></script>
-    <script src="tools/three.js/examples/js/controls/OrbitControls.js"></script>
-    <script src="tools/three.js/examples/js/Detector.js"></script>
-    <script src='tools/three.js/examples/js/libs/dat.gui.min.js'></script>
-    <script src='tools/three.js/examples/js/geometries/TeapotBufferGeometry.js'></script>
-    <script>
-    ////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
     // Utah/Newell Teapot demo
     ////////////////////////////////////////////////////////////////////////////////
     /*global THREE, Detector, container, dat, window */
@@ -80,10 +40,10 @@
 
         // CAMERA
         camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 80000);
-        camera.position.set(-600, 550, 1300);
+        camera.position.set(0, 550, 1300);
 
         // LIGHTS
-        ambientLight = new THREE.AmbientLight(0x333333); // 0.2
+        ambientLight = new THREE.AmbientLight(0xFFFFFF); // 0.2
 
         light = new THREE.DirectionalLight(0xFFFFFF, 1.0);
         // direction is set in GUI
@@ -410,7 +370,3 @@
         scene.add(rightEye);
         scene.add(leftEye);
     }
-    </script>
-</body>
-
-</html>

@@ -2,7 +2,7 @@
   "name": "rubberDuck",
   "version": "2.0.0",
   "scripts": {
-    "start": "rubberDuck.html"
+    "start": "/rubberDuckApp/rubberDuck.html"
   },
   "author": "Jessica",
   "dependencies": {
